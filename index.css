@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+    width: 100%; 
+}
+
+/* - User Story #11: The navbar should always be at the top of the viewport. */
+#navbar {
+    width: 100vw; 
+    height: 20vh;
+    position: fixed; 
+    top: 0; 
+    background-color: white;
+}
+
+/* - User Story #10: The height of the welcome section should be equal to the height of the viewport. */
+
+#welcome-section {
+    height: 100vh; 
+    margin-top: 25vh; 
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+p {
+    margin: 50px; 
+}
+
+h1 {
+    font-size: 75px;
+    color: white; 
+    margin: 20px 0px 0px 20px;
+}
+
+/* - User Story #9: My portfolio should have at least one media query. */
+@media only screen and (max-width: 815px) {
+    h1 {
+        font-size: 40px;
+    }
+}
